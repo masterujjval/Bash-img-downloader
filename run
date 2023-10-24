@@ -1,6 +1,20 @@
 #!/bin/bash
 echo -e "\n"
-
+check=/usr/bin/wget
+if [ -f $check ]
+then 
+    echo "Checking dependencies....."
+    sleep 2
+    echo "Done"
+else
+    echo "Installing required packages"
+    sleep 2
+    sudo apt install wget -y
+    sudo apt update
+    echo -e "\n"
+    echo "Installation done"
+fi
+echo -e "\n"
 echo "Enter the image URL to download e.g .jpeg, .png, etc"
 read n
 path=`pwd`
