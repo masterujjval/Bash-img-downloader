@@ -12,4 +12,4 @@ This script is useful to download any image from any website. Just copy the link
 
 ## Example
 
-After running the script it will ask for link to download image. For reference copy and paste the below link: https://shorturl.at/foS89
+After running the script it will ask for link to download image. For reference copy and paste the below link: https://www.electrictoolbox.com/images/icons/linux-bsd.gif
