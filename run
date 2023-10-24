@@ -1,0 +1,15 @@
+#!/bin/bash
+echo -e "\n"
+
+echo "Enter the image URL to download e.g .jpeg, .png, etc"
+read n
+path=`pwd`
+
+wget --user-agent="Kali" -q -P $path $n
+
+if [ $? -eq 0 ]
+then
+    echo "Image downloaded successfully at $path"
+else
+    echo "error occurred"
+fi
